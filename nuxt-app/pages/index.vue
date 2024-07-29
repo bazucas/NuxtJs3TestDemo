@@ -14,6 +14,12 @@
         @click="toggleLayout">
         {{ toBePickedLayout + ' Layout' }}
       </button>
+      <br>
+      <img src="/images/nuxt.png" alt="nuxtjs">
+      <!-- inside the public folder this image or other files won't have any kind of processing allowed -->
+      <br>
+      <img src="/assets/images/nuxt.png" alt="nuxtjs">
+          <!-- This image will under go processing tools, bundling, resizing, like external css and external js as well -->
     </div>
   </template>
   
