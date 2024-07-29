@@ -7,15 +7,17 @@
         <h1><NuxtLink to="/PageMetaMiddleware/">PageMeta</NuxtLink></h1>    
         <h1><NuxtLink to="/NuxtRouteMiddleware/">NuxtRoute</NuxtLink></h1>    
         <h1><NuxtLink to="/GlobalRouteMiddleware/">GlobalRoute</NuxtLink></h1>    
+        <h1><NuxtLink to="/Users/1">users/1</NuxtLink></h1>    
     </div>
 </template>
 
 <script setup>
-    let name 
-    if (process.client) {
-        name = prompt("Enter your name")
-    }
+let name 
+if (import.meta.client) {
+    //name = prompt("Enter your name")
+}
 </script>
+
 
 <style lang="scss" scoped>
 
