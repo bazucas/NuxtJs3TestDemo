@@ -12,13 +12,13 @@ export default defineNuxtPlugin( () => {
     //     }
     // });
 
-    addRouteMiddleware((to)=> {
-        console.log('Global middleware')
+    // addRouteMiddleware((to)=> {
+    //     console.log('Global middleware')
 
-        const name = to.params.name;
-        if (name && name.toLowerCase() === 'luis') {
-            return abortNavigation('The name Luis is not allowed');
-        }
+    //     const name = to.params.name;
+    //     if (name && name.toLowerCase() === 'luis') {
+    //         return abortNavigation('The name Luis is not allowed');
+    //     }
 
-    }, {global: true})
+    // }, {global: true})
 })
