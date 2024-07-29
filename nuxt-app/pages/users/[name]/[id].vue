@@ -1,4 +1,7 @@
 <script setup>
+    definePageMeta({
+        layout: "custom"
+    })
     const route = useRoute()
     const name = route.params.name
     const id = route.params.id

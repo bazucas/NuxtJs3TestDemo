@@ -21,7 +21,8 @@
                 console.log("Inline middleware")
             },
             "another-middleware",
-        ]
+        ],
+        layout: false // disables all layouts for this page
     })
 </script>
 
