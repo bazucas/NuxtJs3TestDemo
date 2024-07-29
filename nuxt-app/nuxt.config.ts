@@ -14,25 +14,4 @@ export default defineNuxtConfig({
       autoprefixer: {}
     },
   },
-  // vite: {
-  //   css: {
-  //     preprocessorOptions: {
-  //       scss: {
-  //         // Adicione aqui quaisquer importações globais que você queira em todos os arquivos SCSS.
-  //         // Exemplo: variáveis, mixins, etc.
-  //         additionalData: `@import "@/assets/scss/_variables.scss";`
-  //       },
-  //     },
-  //   },
-  // },
-  // O restante da configuração permanece o mesmo
-  // hooks: {
-  //   'pages:extend'(routes: NuxtPage[]) {
-  //     routes.push({
-  //       name: 'validation',
-  //       path: '/validation/:id?',
-  //       file: 'pages/routeValidation/id.vue'
-  //     });
-  //   }
-  // }
 })
