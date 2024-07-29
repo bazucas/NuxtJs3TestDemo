@@ -24,6 +24,7 @@
   </template>
   
   <script setup>
+  import '~/assets/css/main.css'
   import { ref } from 'vue'
   
   let name 
@@ -46,8 +47,14 @@
     }
   }
   </script>
-  
-  <style lang="scss" scoped>
 
-</style>
+<style lang="scss" scoped>
+    
+    @import '~/assets/css/main.css';
+    
+    h1{
+      color:blue; /* this will only affect this page because of scoped */
+    } 
+
+  </style>
   
