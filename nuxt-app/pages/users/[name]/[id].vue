@@ -1,18 +1,13 @@
 <script setup>
-    definePageMeta({
-        middleware: [
-            function( to ) {
-                if(to.params.id === '1') return navigateTo('/')
-                if(to.params.id === '2') return abortNavigation()
-                if(to.params.id === '3') return abortNavigation('ID should not be 3')
-                console.log('Everything is fine')
-            }
-        ]
-    })
+    const route = useRoute()
+    const name = route.params.name
+    const id = route.params.id
 </script>
 
 <template>
     <div>
-
+        <h1>NAME: {{ name }}</h1>
+        <h1>ID: {{ id }}</h1>
+        <!-- http://localhost:3000/users/Luis/2024 -->
     </div>
 </template>
