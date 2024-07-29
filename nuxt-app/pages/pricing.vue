@@ -1,6 +1,9 @@
 <template>
     <div>
-        <h1>Pricing page</h1>
+        <Head>
+            <Title>{{  $route.params.name }}</Title>
+        </Head>
+        <h1>Pricing page with title from HTML and route params</h1>
     </div>
 </template>
 
