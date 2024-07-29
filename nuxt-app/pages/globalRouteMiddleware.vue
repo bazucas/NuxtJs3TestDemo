@@ -1,6 +1,13 @@
 <!-- MIDDLEWARE -->
 <script setup>
-
+    definePageMeta({
+            middleware: [            
+                function(to, from) {
+                    console.log("Inline middleware")
+                },
+                "another-middleware"
+            ]
+        })
 </script>
 
 <template>
