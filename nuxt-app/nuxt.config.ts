@@ -14,7 +14,15 @@ export default defineNuxtConfig({
       autoprefixer: {}
     },
   },
-  // app: {
+  app: {
+    pageTransition: {
+      name: "page",
+      mode: "out-in"
+    },
+    layoutTransition: {
+      name: "page",
+      mode: "out-in"
+    }
   //   head: {
   //     charset: "utf-8",
   //     viewport: "width=device.width, initial-scale=2",
@@ -28,5 +36,5 @@ export default defineNuxtConfig({
   //       href: "~/assets/styles/style.css"
   //     }]
   //   }
-  // }
+  }
 })

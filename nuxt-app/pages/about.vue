@@ -26,7 +26,7 @@
     })
 </script>
 
-<style lang="scss">
+<style lang="css" scoped>
     h1{
       color:red; /* this will only affect globally because we removed scoped */
     } 

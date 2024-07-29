@@ -5,7 +5,9 @@
 </template>
 
 <script setup>
-
+definePageMeta({
+        layout: "custom" // disables all layouts for this page
+    })
 </script>
 
 <style lang="scss" scoped>
