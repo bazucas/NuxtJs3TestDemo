@@ -7,7 +7,14 @@
 </template>
 
 <script setup>
-
+        definePageMeta({
+        middleware: [            
+            function(to, from) {
+                console.log("Inline middleware")
+            },
+            "another-middleware",
+        ]
+    })
 </script>
 
 <style lang="scss" scoped>

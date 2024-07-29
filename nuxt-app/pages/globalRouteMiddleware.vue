@@ -13,3 +13,5 @@
 <style lang="scss" scoped>
 
 </style>
+
+<!-- this vue page is unnecessary since global middleware will be called in all vue pages -->
