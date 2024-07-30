@@ -1,0 +1,15 @@
+<button onclick="getData()">Get Product</button>
+<script>
+  const getData = () => {
+    const interval = setInterval(() => {
+      // without nuxtjs this request will be executed every single time with the same data coming in (unnecessary)
+      fetch('https://fakestoreapi.com/products/1')
+        .then(response => response.json())
+        .then(data => console.log(data))
+    }, 1)
+
+    setTimeout(() => {
+      clearInterval(interval)
+    }, 2000)
+  }
+</script>
