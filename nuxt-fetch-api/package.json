@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "nuxt": "^3.12.4",
+    "vite": "^5.3.5",
     "vue": "latest"
   },
   "devDependencies": {

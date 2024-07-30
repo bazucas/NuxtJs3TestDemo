@@ -19,7 +19,7 @@ const { data: product } = await useFetch(() => `https://fakestoreapi.com/product
 <template>
   <div>
     <p>{{ product }}</p>
-    <NuxtLink to="/fetch/fetch-index">Index</NuxtLink>
+    <NuxtLink class="btn-teste" to="/fetch/fetch-index">Index</NuxtLink>
     <br><br>
   </div>
 </template>
