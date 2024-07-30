@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1>Fetch Home</h1>
-        <NuxtLink to="/fetch/fetch-cache">Index</NuxtLink>
+        <h1 class="mb-5">Fetch Home</h1>
+        <NuxtLink class="btn-teste" to="/fetch/fetch-cache">Index</NuxtLink>
     </div>
 </template>
 
