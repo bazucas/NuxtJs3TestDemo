@@ -4,22 +4,23 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  css: ['~/assets/css/main.scss'], // Importar o arquivo SCSS principal
-  //modules: ['@nuxtjs/tailwindcss'], //another way of importing npm i nuxtjs/tailwindcss
+  css: [
+    '~/assets/scss/main.scss', // SCSS principal onde os estilos são importados
+    '~/assets/css/tailwind.css' // Arquivo CSS do Tailwind
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {}
     },
   },
-  app: {
-    pageTransition: {
-      name: "page",
-      mode: "out-in"
-    },
-    layoutTransition: {
-      name: "page",
-      mode: "out-in"
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "@/assets/scss/_variables.scss";'
+        }
+      }
     }
   }
 })
