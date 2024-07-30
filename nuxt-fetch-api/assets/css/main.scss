@@ -1,5 +1,28 @@
 @import "@/assets/css/_variables.scss";
 
-h1 {
-    color: green;
+
+.footer-min-h {
+  min-height: calc(100vh - 97px);
 }
+
+
+
+// $footer-min-height: calc(100vh - 120px);
+
+// @mixin footer-min-height {
+//   min-height: $footer-min-height;
+// }
+
+// @mixin footer-default {
+//   min-height: auto; 
+// }
+
+// .footer {
+//   &.footer-min-h {
+//     @include footer-min-height;
+//   }
+
+  // &.footer-default {
+  //   @include footer-default;
+  // }
+//}

@@ -3,7 +3,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   css: ['~/assets/css/main.scss'], // Importar o arquivo SCSS principal
   //modules: ['@nuxtjs/tailwindcss'], //another way of importing npm i nuxtjs/tailwindcss
   postcss: {
