@@ -2,14 +2,14 @@
 const route = useRoute()
 const id = route.params.id
 // const {data: product} = await useFetch(`https://fakestoreapi.com/products/${id}`)
-const {data: product, error} = await useFetch(`https://fakestoreapi.com/productss/${id}`) // bad URL
+const {data: product, error} = await useFetch(`https://fakestoreapi.com/products/${id}`) // bad URL
 
-// if(!product.value) {
-//     throw createError({ // custom error throw
-//         statusCode: 404,
-//         message: "Product not found!!!"
-//     })
-//}
+if(!product.value) {
+    throw createError({ // custom error throw
+        statusCode: 404,
+        message: "Product not found!!!"
+    })
+}
 </script>
 
 <template>
