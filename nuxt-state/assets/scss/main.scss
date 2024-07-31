@@ -1,0 +1,38 @@
+@import "variables";
+
+.footer-min-h {
+  min-height: calc(100vh - 40px);
+}
+
+.btn-teste {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+// $footer-min-height: calc(100vh - 120px);
+
+// @mixin footer-min-height {
+//   min-height: $footer-min-height;
+// }
+
+// @mixin footer-default {
+//   min-height: auto; 
+// }
+
+// .footer {
+//   &.footer-min-h {
+//     @include footer-min-height;
+//   }
+
+  // &.footer-default {
+  //   @include footer-default;
+  // }
+//}
