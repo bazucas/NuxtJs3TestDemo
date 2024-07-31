@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts" setup>
-    const counter = useState("counterState", () => 1)
+    const counter = useCounter()
 
 </script>
 
