@@ -6,6 +6,5 @@
       <NuxtPage />
     </NuxtLayout>
     <Footer />
-    <!-- <NuxtWelcome /> -->
   </div>
 </template>
