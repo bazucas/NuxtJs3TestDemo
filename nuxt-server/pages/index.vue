@@ -1,7 +1,7 @@
 <script setup>
   let userName
   if (process.client) {
-    userName = prompt('What is your name?') // only works on the client side
+    //userName = prompt('What is your name?') // only works on the client side
   }
 
   const { data : name } = await useFetch("/user/rec-user", {

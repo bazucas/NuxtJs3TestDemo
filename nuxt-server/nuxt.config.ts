@@ -32,5 +32,12 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [customOutputPlugin()]
+  },
+  runtimeConfig: {
+    api: process.env.apiKey,
+    secretKey: "123",
+    public: {
+      publicKey: "456"
+    }
   }
 })
