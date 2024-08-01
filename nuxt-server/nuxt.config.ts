@@ -2,7 +2,6 @@
 import { defineNuxtConfig } from 'nuxt/config'
 import type { Plugin } from 'vite'
 
-// Definição do plugin personalizado para Vite
 function customOutputPlugin(): Plugin {
   return {
     name: 'custom-css-plugin',
