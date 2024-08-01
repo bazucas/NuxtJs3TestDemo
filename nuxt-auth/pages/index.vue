@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h1>WTF!!!!</h1>
         <br>
         <NuxtLink class="text-3xl" to="/register">Register</NuxtLink>
         <br>

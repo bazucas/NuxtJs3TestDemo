@@ -18,7 +18,7 @@
       <br>
       <br>
 
-      <button @click="signUp">Register</button>
+      <button class="btn-default" @click="signUp">Register</button>
 
       <div v-if="successMsg">
         <h1>{{ successMsg }}</h1>
@@ -33,12 +33,12 @@
 <script setup>
     const supabase = useSupabaseClient()
     const user = useSupabaseUser()
-    const email = useState(() => null)
-    const password = useState(() => null)
-    const userName = useState(() => null)
-    const address = useState(() => null)
-    const successMsg = useState(() => false)
-    const errorMsg = useState(() => false)
+    const email = ref('')
+    const password = ref('')
+    const userName = ref('')
+    const address = ref('')
+    const successMsg = ref('')
+    const errorMsg = ref('')
 
     if (user.value) await navigateTo("/")
 

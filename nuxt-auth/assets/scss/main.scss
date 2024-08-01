@@ -1,0 +1,24 @@
+@import "variables";
+
+.footer-min-h {
+  min-height: calc(80vh);
+}
+
+.btn-default {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+input {
+  border: 2px solid #888;
+  border-radius: 3px;
+}
