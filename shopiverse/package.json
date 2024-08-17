@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@prisma/client": "^5.12.1",
+    "@prisma/client": "^5.18.0",
     "nuxt": "^3.12.4",
     "vue": "latest",
     "vue-router": "^4.3.0"
@@ -23,7 +23,7 @@
     "@nuxtjs/tailwindcss": "^6.11.4",
     "flowbite": "^2.3.0",
     "nuxt-icon": "^0.6.10",
-    "prisma": "^5.12.1",
+    "prisma": "^5.18.0",
     "stripe": "^15.1.0"
   }
 }
